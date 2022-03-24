@@ -6,32 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".ThreeFragment">
 
-    <EditText
-        android:layout_centerInParent="true"
-        android:id="@+id/inputusia"
-        android:hint="Masukan Usia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
-    <EditText
-        android:layout_below="@id/inputusia"
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:id="@+id/inputalamat"
-        android:hint="Masukan Alamat"
+        android:text="nama anda" />
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Text1"
+        android:layout_centerInParent="true"
+        android:autoText="false"
+        android:text="Usia Anda" />
+    <TextView
+        android:text="Alamat Anda"
+        android:layout_below="@id/Text2"
+        android:layout_centerInParent="true"
+        android:id="@+id/Text3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_below="@id/inputalamat"
+    <TextView
+        android:text="Pekerjaan anda"
+        android:layout_below="@id/Text3"
         android:layout_centerInParent="true"
-        android:id="@+id/inputpekerjaan"
-        android:hint="Masukan Pekerjaan"
+        android:id="@+id/Text4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
-        android:text="Go To Screen 1"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/inputpekerjaan"
-        android:id="@+id/kembalike3"
+        android:text="Go to Screen 4"
+        android:id="@+id/Btn3"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/Text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

@@ -6,18 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".SecondFragment">
 
-    <TextView
+    <EditText
+        android:hint="Masukan Nama"
+        android:id="@+id/inputnama"
         android:layout_centerInParent="true"
-        android:layout_above="@id/kescreen4"
-        android:id="@+id/outname"
-        android:textSize="25sp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:layout_centerInParent="true"
-        android:text="Go To Screen 4"
-        android:id="@+id/kescreen4"
+        android:layout_below="@id/inputnama"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/kescreen3"
+        android:text="Go To Screen 3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 </RelativeLayout>

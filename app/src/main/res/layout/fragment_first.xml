@@ -6,15 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".FirstFragment">
 
-    <EditText
-        android:id="@+id/inputnama"
-        android:layout_centerInParent="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
     <Button
-        android:id="@+id/kescreen3"
-        android:text="Go To Screen 3"
+        android:layout_centerInParent="true"
+        android:id="@+id/kescreen2"
+        android:text="Go To Screen 2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 </RelativeLayout>
