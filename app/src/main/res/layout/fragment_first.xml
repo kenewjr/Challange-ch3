@@ -15,6 +15,7 @@
         tools:ignore="HardcodedText" />
 
     <Button
+        android:backgroundTint="@color/biru"
         android:layout_centerInParent="true"
         android:id="@+id/kescreen2"
         android:text="Go To Screen 2"

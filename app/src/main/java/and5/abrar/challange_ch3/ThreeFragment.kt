@@ -25,19 +25,21 @@ class ThreeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val nama = arguments?.getString("nama")
-        val usia = arguments?.getString("usia")
-        val type = arguments?.getString("typeusia")
-        val alamat = arguments?.getString("alamat")
-        val kerja = arguments?.getString("kerja")
-        Text1.text = "Nama Anda : $nama"
+        val data = arguments?.getParcelable<Parcel>("data")
+        val usia = data?.usia
+        val type = data?.typeusia
+        val alamat = data?.alamat
+        val kerja = data?.kerja
         if (usia!=null){
+            Text1.text = "Nama Anda : $nama"
             Text2.text = "Usia Anda : $usia bernilai : $type"
             Text3.text = "Alamat Anda : $alamat"
             Text4.text = "Pekerjaan Anda : $kerja"
         }else{
+            Text1.text = " "
             Text2.text = " "
             Text3.text = " "
-            Text4.text = " "
+            Text4.text = "Nama Anda : $nama "
         }
         Btn3.setOnClickListener {
             val bundle = bundleOf("nama" to nama)

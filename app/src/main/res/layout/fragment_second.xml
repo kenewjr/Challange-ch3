@@ -23,6 +23,7 @@
         tools:ignore="Autofill,HardcodedText,TextFields" />
 
     <Button
+        android:backgroundTint="@color/biru"
         android:layout_below="@id/inputnama"
         android:layout_centerHorizontal="true"
         android:id="@+id/kescreen3"

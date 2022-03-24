@@ -34,12 +34,8 @@ class FourFragment : Fragment() {
                 }
                 val alamat = inputalamat.text.toString()
                 val kerja = inputpekerjaan.text.toString()
-                val bundle = bundleOf(
-                    "nama" to nama,
-                    "usia" to usia,
-                    "typeusia" to typeusia,
-                    "alamat" to alamat,
-                    "kerja" to kerja)
+                val data = Parcel(nama, alamat, typeusia, usia, kerja)
+                val bundle = bundleOf("data" to data, "nama" to nama)
                 Navigation.findNavController(view).navigate(R.id.empatketiga,bundle)
         }
     }

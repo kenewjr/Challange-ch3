@@ -39,6 +39,7 @@
         android:layout_height="wrap_content"
         tools:ignore="Autofill,HardcodedText,TextFields" />
     <Button
+        android:backgroundTint="@color/biru"
         android:text="Go To Screen 3"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/inputpekerjaan"
