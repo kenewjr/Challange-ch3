@@ -11,7 +11,8 @@
         android:id="@+id/inputnama"
         android:layout_centerInParent="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,HardcodedText,TextFields" />
 
     <Button
         android:layout_below="@id/inputnama"
@@ -19,5 +20,6 @@
         android:id="@+id/kescreen3"
         android:text="Go To Screen 3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
 </RelativeLayout>

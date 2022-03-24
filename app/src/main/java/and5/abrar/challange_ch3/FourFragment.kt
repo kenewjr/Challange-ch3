@@ -5,29 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.Navigation
+import kotlinx.android.synthetic.main.fragment_four.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [FourFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class FourFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,23 +20,28 @@ class FourFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_four, container, false)
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment FourFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            FourFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        kembalike3.setOnClickListener {
+                val nama = arguments?.getString("nama")
+                val usia = inputusia.text.toString()
+                val typeusia:String
+                if(usia.toInt()%2==0){
+                    typeusia = "genap"
+                }else{
+                    typeusia = "ganjil"
                 }
-            }
+                val alamat = inputalamat.text.toString()
+                val kerja = inputpekerjaan.text.toString()
+                val bundle = bundleOf(
+                    "nama" to nama,
+                    "usia" to usia,
+                    "typeusia" to typeusia,
+                    "alamat" to alamat,
+                    "kerja" to kerja)
+                Navigation.findNavController(view).navigate(R.id.empatketiga,bundle)
+        }
     }
+
 }

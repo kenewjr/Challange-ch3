@@ -12,7 +12,8 @@
         android:id="@+id/inputusia"
         android:hint="Masukan Usia"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,HardcodedText,TextFields" />
 
     <EditText
         android:layout_below="@id/inputusia"
@@ -20,20 +21,23 @@
         android:id="@+id/inputalamat"
         android:hint="Masukan Alamat"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,HardcodedText,TextFields" />
     <EditText
         android:layout_below="@id/inputalamat"
         android:layout_centerInParent="true"
         android:id="@+id/inputpekerjaan"
         android:hint="Masukan Pekerjaan"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,HardcodedText,TextFields" />
     <Button
         android:text="Go To Screen 3"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/inputpekerjaan"
         android:id="@+id/kembalike3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
 
 </RelativeLayout>

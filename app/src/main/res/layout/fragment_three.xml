@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="nama anda" />
+        android:text="nama anda"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/Text2"
@@ -22,27 +23,31 @@
         android:layout_below="@id/Text1"
         android:layout_centerInParent="true"
         android:autoText="false"
-        android:text="Usia Anda" />
+        android:text="Usia Anda"
+        tools:ignore="Deprecated,HardcodedText,TextViewEdits" />
     <TextView
         android:text="Alamat Anda"
         android:layout_below="@id/Text2"
         android:layout_centerInParent="true"
         android:id="@+id/Text3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
     <TextView
         android:text="Pekerjaan anda"
         android:layout_below="@id/Text3"
         android:layout_centerInParent="true"
         android:id="@+id/Text4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
     <Button
         android:text="Go to Screen 4"
         android:id="@+id/Btn3"
         android:layout_centerInParent="true"
         android:layout_below="@+id/Text4"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
 
 </RelativeLayout>
